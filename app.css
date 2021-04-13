@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Custom CSS Starts from here  */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+}
+
+
+.table {
+    display: flex;
+    color: hsl(0, 0%, 95%);
+    flex-direction: row;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin: 30px;
+    width: 1440px;
+}
+
+.plan {
+    padding: 2em;
+}
+
+
+.plan:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.plan:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.plan:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.header {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    margin: 30px 5px;
+    margin-top: 15px;
+    color: hsl(0, 0%, 95%)
+}
+
+.blahs {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 30px 5px;
+    margin-bottom: 60px;
+}
+
+.more-btn {
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    border-radius: 19px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(0, 0%, 95%);
+}
+
+
+#fst {
+    color: hsl(31, 77%, 52%);
+}
+
+#snd {
+    color:hsl(184, 100%, 22%);
+}
+
+#trd {
+    color: hsl(179, 100%, 13%);
+}
+
+.more-btn:hover, #trd:hover, #snd:hover, #fst:hover {
+    background: inherit;
+    color: white;
+    border: 1px solid white;
+    border-radius: 19px;
+    padding: 9px 20px;
+    cursor: pointer;
+}
+
+.image {
+    width: 5em;
+    height: 3em;
+    margin: 10px 5px;
+}
+
+@media (max-width: 550px) {
+    .table {
+        flex-direction: column;
+    }
+
+    .plan:first-child {
+        border-radius: 0;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .plan:last-child {
+        border-radius: 0%;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+}
